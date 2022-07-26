@@ -37,5 +37,4 @@ int main() {
 
      cout << r.wid << endl;
 
-
 }

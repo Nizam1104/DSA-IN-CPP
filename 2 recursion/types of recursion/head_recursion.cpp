@@ -7,9 +7,6 @@ void headrecursion(int x) {
      headrecursion(x-1);
      cout << x << "  ";
      }
-
-
-
 }
 
 int main() {

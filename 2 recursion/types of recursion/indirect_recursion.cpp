@@ -18,7 +18,6 @@ void fun2(int n) {
      }
 }
 
-
 int main() {
      int x =10;
      fun1(x);

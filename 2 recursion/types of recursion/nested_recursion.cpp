@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 int nested(int n) {
+
      if(n >10) {
           return n-3;
      } else {
@@ -12,5 +13,4 @@ int main() {
      int x = 3;
 
      cout << nested(x);
-
 }
