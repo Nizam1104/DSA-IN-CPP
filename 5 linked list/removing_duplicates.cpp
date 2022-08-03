@@ -26,6 +26,22 @@ void create(int arr[], int n) {
      
 }
 
+void remove_dupe(struct Node *p) {
+     struct Node *q = new Node;
+     q = p->next;
+
+     while(q != NULL) {
+          if(p->data != q->data) {
+          p = q;
+          q = q->next;
+     } else {
+          p->next = q->next;
+          free(q);
+          q = p->next;
+     }
+     }
+}
+
 void display(struct Node *p) {
      while(p!= NULL) {
           cout << p->data << " ";
@@ -35,41 +51,15 @@ void display(struct Node *p) {
 
 int main() {
      
-     int arr[] = {1,2,3,4,5};
-     int n = sizeof(arr)/sizeof(arr[0]);
-     create(arr, n);
+     int arr[] = {1,2,3,3,4,4,4,5,5,6};
+
+     create(arr, 10);
+     cout << "\noriginal linked list is" << endl;
+     display(first);
+
+     remove_dupe(first);
+     cout << "\nafter deleting dulicates linked list is" << endl;
      display(first);
 
      return 0; 
 }
-
-// #include<iostream>
-// using namespace std;
-
-// struct ll {
-//      int data;
-//      struct ll* next;
-// };
-
-
-// void display(struct ll* p) {
-//      while(p != NULL) {
-//           cout << p->data << endl;
-//           p = p->next;
-//      }
-// }
-
-// int main() {
-
-//      struct ll* first = new ll;
-//      struct ll* second = new ll;
-
-//      first->data = 1;
-//      first->next = second;
-
-//      second->data = 2;
-//      second->next = NULL;
-
-//      display(first);
-
-// }
