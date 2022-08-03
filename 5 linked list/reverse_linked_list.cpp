@@ -26,6 +26,22 @@ void create(int arr[], int n) {
      
 }
 
+void reverse(struct Node *p) {
+     struct Node *q = new Node;
+     struct Node *r = new Node;
+
+     q = NULL, r = NULL;
+
+     while(p != NULL) {
+          r = q;
+          q = p;
+          p = p->next;
+          q->next = r;
+     }
+
+     first = q;
+}
+
 void display(struct Node *p) {
      while(p!= NULL) {
           cout << p->data << " ";
@@ -38,38 +54,13 @@ int main() {
      int arr[] = {1,2,3,4,5};
      int n = sizeof(arr)/sizeof(arr[0]);
      create(arr, n);
+     cout << "\noriginal linked list is\n";
      display(first);
+
+     reverse(first);
+     cout << "\nlinked list after reversing is\n";
+     display(first);
+
 
      return 0; 
 }
-
-// #include<iostream>
-// using namespace std;
-
-// struct ll {
-//      int data;
-//      struct ll* next;
-// };
-
-
-// void display(struct ll* p) {
-//      while(p != NULL) {
-//           cout << p->data << endl;
-//           p = p->next;
-//      }
-// }
-
-// int main() {
-
-//      struct ll* first = new ll;
-//      struct ll* second = new ll;
-
-//      first->data = 1;
-//      first->next = second;
-
-//      second->data = 2;
-//      second->next = NULL;
-
-//      display(first);
-
-// }

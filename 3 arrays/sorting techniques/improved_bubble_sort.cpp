@@ -2,7 +2,7 @@
 in improved bubble sort is based on the logic that if no swap 
 is done in one pass then the array is already sorted
 
-this can reduce time taken by algoritham in some cases
+this can reduce time taken by algorithm in some cases
 
 
 time complexity is O(n)

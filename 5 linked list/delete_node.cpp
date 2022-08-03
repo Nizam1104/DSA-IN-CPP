@@ -26,6 +26,20 @@ void create(int arr[], int n) {
      
 }
 
+void delete_node(struct Node *p, int index) {
+
+     struct Node *temp = new Node;
+     
+     for(int i=0; i<index-2; i++) {
+          p= p->next;
+     }
+
+     temp = p->next;
+     p->next = temp->next;
+
+     free(temp);   
+}
+
 void display(struct Node *p) {
      while(p!= NULL) {
           cout << p->data << " ";
@@ -40,36 +54,10 @@ int main() {
      create(arr, n);
      display(first);
 
+     cout << endl;
+
+     delete_node(first, 3);
+     display(first);
+
      return 0; 
 }
-
-// #include<iostream>
-// using namespace std;
-
-// struct ll {
-//      int data;
-//      struct ll* next;
-// };
-
-
-// void display(struct ll* p) {
-//      while(p != NULL) {
-//           cout << p->data << endl;
-//           p = p->next;
-//      }
-// }
-
-// int main() {
-
-//      struct ll* first = new ll;
-//      struct ll* second = new ll;
-
-//      first->data = 1;
-//      first->next = second;
-
-//      second->data = 2;
-//      second->next = NULL;
-
-//      display(first);
-
-// }
