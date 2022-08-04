@@ -1,3 +1,7 @@
+/*
+ reversing linked list using sliding pointer method.
+ */
+
 #include<iostream>
 using namespace std;
 
