@@ -90,7 +90,7 @@ int main() {
      
      int arr1[] = {1,3,5,7,9};
      int n1 = sizeof(arr1)/sizeof(arr1[0]);
-     int arr2[] = {2,4,6,8,10};
+     int arr2[] = {1,4,6,8,10};
      int n2 = sizeof(arr2)/sizeof(arr2[0]);
      create1(arr1, n1);
      // display(first);

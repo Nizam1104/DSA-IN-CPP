@@ -1,0 +1,68 @@
+----------
+
+
+----------
+
+
+1)
+----------
+add binary on leetcode
+
+link: https://leetcode.com/problems/add-binary/description/
+
+----------
+
+2)
+----------
+is power of 2 on leetcode and gfg
+
+link: https://leetcode.com/problems/power-of-two/
+
+----------
+
+3)
+----------
+two non repeating elements : leetcode
+
+link : https://leetcode.com/problems/single-number-iii/description/
+
+----------
+
+
+4)
+----------
+encoded array on leetcode
+link : https://leetcode.com/problems/decode-xored-array/description/
+
+----------
+
+5)
+----------
+Find position of set bit : gfg
+link : https://practice.geeksforgeeks.org/problems/find-position-of-set-bit3706/1
+----------
+
+
+6)
+----------
+Bit Difference on geeksforgeeks
+
+link : https://practice.geeksforgeeks.org/problems/bit-difference-1587115620/1
+
+----------
+
+7)
+----------
+Copy Set Bits in Range on geeksforgeeks
+
+link: https://practice.geeksforgeeks.org/problems/copy-set-bits-in-range0623/1
+----------
+
+8)
+----------
+duplicate characters in a string on geeksforgeeks
+
+link : https://www.geeksforgeeks.org/print-all-the-duplicates-in-the-input-string/
+----------
+
+
